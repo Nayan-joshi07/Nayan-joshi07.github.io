@@ -1,69 +1,832 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nayan Joshi — AI Engineer specializing in RAG, Agentic AI, LLM systems, and AI consulting. Available for full-time roles and consulting engagements.">
+    <meta name="keywords" content="AI Engineer, LLM, RAG, Agentic AI, LangGraph, PydanticAI, Python, FastAPI, Consulting">
+    <meta property="og:title" content="Nayan Joshi — AI Engineer & Consultant">
+    <meta property="og:description" content="Building intelligent systems that think, act, and scale.">
+    <title>Nayan Joshi — AI Engineer & Consultant</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
-    <title>Nayan Joshi!</title>
-  </head>
-  <body>
-    <section class = "home">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand active" href="index.html">My <span style = "color:red;">Portfolio</span></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="about.html">Know Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CP Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Certificate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="intro">
-        <h1 class="name">Nayan Joshi</h1>
-        <h3>Software Engineer & Programming Instructor</h3>
-        <br>
-        <p>
-          Hi. Welcome to my personal Web Page. Thank you for landing here. If you explore this website you will get to know about me, What I have done in the past, What I'm currently do and my future plan. In case you want to contact me for any reason. I have added contact details in the contact page.
-          <br>
-          <b>Thank You</b>
-        </p>
-        <br>
-        <a class="btn line-btn-dark btn-icon btn-radius" href="./img/Nayan's Resume.pdf" title="" download>
-          <button type="button" class="btn btn-primary btn-lg">Explore</button>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════ -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+            <div class="nav-logo-mark">NJ</div>
+            <span class="nav-logo-text">Nayan Joshi</span>
         </a>
-       <!-- <button type="button" class="btn btn-primary btn-lg">Explore</button> -->
-       </div>
-    </section>
-    <!-- Optional JavaScript; choose one of the two! -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#consulting">Consulting</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Hire Me →</a>
+        </div>
+    </div>
+</nav>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Available for AI roles &amp; consulting
+        </div>
+        <h1 class="hero-name">
+            Hi, I'm<br>
+            <span class="gradient-text">Nayan Joshi</span>
+        </h1>
+        <div class="hero-typed-wrapper">
+            <span id="typed-text"></span>
+        </div>
+        <p class="hero-tagline">
+            I build intelligent systems that think, act, and scale — from RAG pipelines and agentic workflows to production-grade LLM architectures.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+                <i class="fas fa-code"></i> View My Work
+            </a>
+            <a href="#consulting" class="btn-secondary">
+                <i class="fas fa-briefcase"></i> Consulting Services
+            </a>
+            <a href="./img/Nayan's Resume .pdf" class="btn-secondary" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+        <div class="hero-socials">
+            <a href="https://github.com/Nayan-joshi07" target="_blank" rel="noopener" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/nayan-joshi-93271c201" target="_blank" rel="noopener" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://leetcode.com/u/Nayan_Joshi/" target="_blank" rel="noopener" title="LeetCode">
+                <i class="fas fa-code"></i>
+            </a>
+            <a href="mailto:nayan07joshi@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll</span>
+    </div>
+</section>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+<!-- ═══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <div class="section-label">About Me</div>
+                <h2 class="section-title">From Software Engineer to<br>AI Engineering</h2>
+                <p>
+                    I started my career building games at <strong>Zynga</strong> and <strong>Bombay Play</strong>, shipping features for millions of players using Unity, TypeScript, and C++. That foundation gave me a deep respect for production systems and user experience at scale.
+                </p>
+                <p>
+                    Three years ago I made a deliberate shift into AI — joining <strong>Quilt Technologies</strong> to build LLM-powered content generation systems, then <strong>Seedling Labs</strong> where I now architect the full AI testing infrastructure behind <a href="https://orchard.com" target="_blank" rel="noopener">Orchard</a>: a VNC browser fleet on AWS ECS, an LLM prompt engineering layer for Playwright automation, and a production monitoring stack.
+                </p>
+                <p>
+                    Along the way I conducted and fully remediated a VAPT covering <strong>55+ security findings</strong> across backend, frontend, infrastructure, and cloud layers — something most AI engineers never touch.
+                </p>
+                <p>
+                    Today I work at the intersection of LLMs, agentic systems, and DevOps. I'm available for consulting engagements that need someone who can go end-to-end — from architecture decisions to shipped code.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="60">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="120">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Companies Worked At</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="180">
+                        <div class="stat-number">55+</div>
+                        <div class="stat-label">Security Findings Fixed</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="240">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Games on Play Store</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-wrapper" data-aos="fade-left" data-aos-delay="100">
+                <div class="about-image-container">
+                    <div class="about-img-bg1"></div>
+                    <div class="about-img-bg2"></div>
+                    <img src="./img/MyImage.jpeg" alt="Nayan Joshi">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════ -->
+<section id="skills">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Skills</div>
+        <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
+        <p class="section-desc" data-aos="fade-up">My current stack across AI/ML, backend engineering, cloud infrastructure, and more.</p>
+
+        <div class="skills-grid">
+            <div class="skill-category cat-ai" data-aos="fade-up" data-aos-delay="0">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(99,102,241,0.15);">🤖</div>
+                    <span class="skill-cat-name">AI / LLM</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">Agentic AI</span>
+                    <span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">PydanticAI</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">LLM</span>
+                    <span class="skill-tag">Generative AI</span>
+                    <span class="skill-tag">Langfuse</span>
+                    <span class="skill-tag">Logfire</span>
+                    <span class="skill-tag">Qdrant</span>
+                </div>
+            </div>
+            <div class="skill-category cat-backend" data-aos="fade-up" data-aos-delay="60">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(6,182,212,0.15);">⚡</div>
+                    <span class="skill-cat-name">Backend</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">RestAPI</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Docker</span>
+                </div>
+            </div>
+            <div class="skill-category cat-cloud" data-aos="fade-up" data-aos-delay="120">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(245,158,11,0.15);">☁️</div>
+                    <span class="skill-cat-name">Cloud / DevOps</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">EC2</span>
+                    <span class="skill-tag">ECS</span>
+                    <span class="skill-tag">CloudFront</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">Loki</span>
+                    <span class="skill-tag">cAdvisor</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="skill-category cat-db" data-aos="fade-up" data-aos-delay="180">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(16,185,129,0.15);">🗄️</div>
+                    <span class="skill-cat-name">Databases</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Neo4j</span>
+                    <span class="skill-tag">Qdrant</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="skill-category cat-game" data-aos="fade-up" data-aos-delay="240">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(168,85,247,0.15);">🎮</div>
+                    <span class="skill-cat-name">Game Dev</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">CocosCreator</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Playable Ads</span>
+                </div>
+            </div>
+            <div class="skill-category cat-tools" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background:rgba(239,68,68,0.15);">🛠️</div>
+                    <span class="skill-cat-name">Tools & Practices</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">VAPT</span>
+                    <span class="skill-tag">DSA</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">Playwright</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════════ -->
+<section id="experience">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Experience</div>
+        <h2 class="section-title" data-aos="fade-up">Work History</h2>
+        <p class="section-desc" data-aos="fade-up">4+ years across software engineering, AI engineering, and security — at startups and scale-ups across India, USA, and remote.</p>
+
+        <div class="timeline" data-aos="fade-up">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Software Engineer - 2</div>
+                            <div class="timeline-company">Seedling Labs Pvt Ltd &nbsp;·&nbsp; Orchard AI</div>
+                            <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> &nbsp;Bangalore, India</div>
+                        </div>
+                        <span class="timeline-date">Dec 2025 – Present</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Built and deployed VNC browser fleet on AWS ECS (t3.xlarge) with auto-scaling for parallel live test execution and session recording</li>
+                        <li>Designed the LLM prompt engineering layer converting natural language test steps into executable Playwright JSON actions — with assertions, iframe handling, fuzzy matching, and spatial element resolution</li>
+                        <li>Conducted and fully remediated a VAPT covering 55+ security findings (Critical, High, Medium, Low) across backend, frontend, infrastructure, cloud, and dependency layers; achieved HTTPS/TLS via AWS CloudFront</li>
+                        <li>Deployed production monitoring stack (Grafana, Prometheus, Loki, Alloy) across 3 EC2 hosts with service discovery, cAdvisor metrics, and cross-host security group configuration</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">AWS ECS</span>
+                        <span class="tech-badge">Playwright</span>
+                        <span class="tech-badge">LLM</span>
+                        <span class="tech-badge">Grafana</span>
+                        <span class="tech-badge">Prometheus</span>
+                        <span class="tech-badge">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item is-consulting">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Senior AI Engineer &nbsp;<span class="consulting-tag">Consulting</span></div>
+                            <div class="timeline-company">WhaleHawk</div>
+                            <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> &nbsp;Nashville, Tennessee, USA · Remote</div>
+                        </div>
+                        <span class="timeline-date">Dec 2025 – May 2026</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Built a content aggregation pipeline for X (Twitter) using BM25 search combined with embedding models for hybrid retrieval and chunk-level intelligence extraction</li>
+                        <li>Developed a full podcast ingestion and analysis pipeline using OpenAI Whisper for audio transcription, intelligent chunking, and GPT-based intelligence extraction</li>
+                        <li>Generated vector embeddings from processed content chunks and stored them in Qdrant for semantic search and retrieval</li>
+                        <li>Set up podcast RSS feed parsing with a three-tier smart deduplication approach, parallel processing, and progress monitoring</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenAI Whisper</span>
+                        <span class="tech-badge">GPT</span>
+                        <span class="tech-badge">BM25</span>
+                        <span class="tech-badge">Vector Embeddings</span>
+                        <span class="tech-badge">Qdrant</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">X API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Senior Software Engineer</div>
+                            <div class="timeline-company">Quilt Technologies Pvt Ltd</div>
+                            <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> &nbsp;San Francisco, USA · Remote</div>
+                        </div>
+                        <span class="timeline-date">Aug 2024 – Nov 2025</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Developed AI-powered content generation systems using LLMs and advanced prompt engineering for mobile app teams</li>
+                        <li>Implemented custom fine-tuning pipelines to optimize model performance for specific content types</li>
+                        <li>Built RESTful APIs integrating OpenAI and AWS APIs for scalable AI content generation at production scale</li>
+                        <li>Designed and optimized prompt strategies ensuring high-quality, consistent content outputs</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">LangGraph</span>
+                        <span class="tech-badge">PydanticAI</span>
+                        <span class="tech-badge">Neo4j</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Logfire</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Software Engineer</div>
+                            <div class="timeline-company">Bombay Play Entertainment Pvt Ltd</div>
+                            <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> &nbsp;Bangalore, India</div>
+                        </div>
+                        <span class="timeline-date">Feb 2022 – Aug 2024</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Led the Block Playable Ads team, driving content and feature releases for the Block Head franchise</li>
+                        <li>Participated in architecture, design, and implementation of front-end features using TypeScript and C++</li>
+                        <li>Worked across Node.js, Firebase, CocosCreator, Unity, and AWS in a fast-paced mobile games studio</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">CocosCreator</span>
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">AWS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Software Engineer</div>
+                            <div class="timeline-company">Zynga India Pvt Ltd</div>
+                            <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> &nbsp;Bangalore, India</div>
+                        </div>
+                        <span class="timeline-date">Aug 2021 – Feb 2022</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Implemented the Lives Wallet feature in Up Up Monkey and added Extension Methods across the app</li>
+                        <li>Integrated Compliance Services across Android and iOS platforms</li>
+                        <li>Optimized Audio Controller and performed code refactoring for maintainability</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════ -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Projects</div>
+        <h2 class="section-title" data-aos="fade-up">Things I've Built</h2>
+        <p class="section-desc" data-aos="fade-up">From AI systems to published mobile games — a selection across different domains.</p>
+
+        <div class="project-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI / LLM</button>
+            <button class="filter-btn" data-filter="game">Game Dev</button>
+            <button class="filter-btn" data-filter="app">Web / App</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(99,102,241,0.15);">🎨</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nayan-joshi07" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://play.google.com/console/u/0/developers/104732561040/app/4974114086326167313/app-dashboard" target="_blank" rel="noopener" title="Play Store"><i class="fab fa-google-play"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-ai">AI / LLM</span>
+                <h3 class="project-title">AI Art Studio &nbsp;<span style="font-size:12px;color:#10b981;font-weight:600;">● Play Store</span></h3>
+                <p class="project-desc">FastAPI backend with LangGraph agentic workflows for AI image generation using Replicate's models, enabling text-to-image creation for mobile app users. Integrated Logfire for real-time API observability and deployed on Firebase with credit-based usage tracking.</p>
+                <div class="project-tech">
+                    <span>FastAPI</span><span>LangGraph</span><span>Replicate</span><span>Logfire</span><span>Firebase</span><span>Python</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="80">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(99,102,241,0.15);">🌿</div>
+                    <div class="project-links">
+                        <a href="https://orchard.seedlinglabs.com/" target="_blank" rel="noopener" title="Live site"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-ai">AI / LLM</span>
+                <h3 class="project-title">Orchard — AI Browser Testing</h3>
+                <p class="project-desc">Production AI testing platform with VNC browser fleet on AWS ECS. LLM prompt engineering layer converts natural language steps into executable Playwright actions with fuzzy matching and spatial element resolution.</p>
+                <div class="project-tech">
+                    <span>LLM</span><span>Playwright</span><span>AWS ECS</span><span>Python</span><span>Grafana</span><span>Prometheus</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(245,158,11,0.15);">🧩</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nayan-joshi07/DigitSum" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://play.google.com/console/u/0/developers/104732561040/app/4974114086326167313/app-dashboard" target="_blank" rel="noopener" title="Play Store"><i class="fab fa-google-play"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-game">Game Dev</span>
+                <h3 class="project-title">Connect Sum</h3>
+                <p class="project-desc">Published puzzle game with dynamic grid generation, randomized number placement, and balanced difficulty scaling. Intuitive touch-based path drawing with real-time sum calculation across Easy, Medium, and Hard modes.</p>
+                <div class="project-tech">
+                    <span>Unity</span><span>C#</span><span>Android</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="80">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(245,158,11,0.15);">🔩</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nayan-joshi07/Screw-Pin-Puzzle-Game" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-game">Game Dev</span>
+                <h3 class="project-title">Glass Screw Sorting Puzzle</h3>
+                <p class="project-desc">Puzzle game with screw-unscrewing mechanics and constraint-based solving. Players strategically remove screws to solve multi-layered challenges with progressive difficulty, smooth animations, and physics-based feedback.</p>
+                <div class="project-tech">
+                    <span>Unity</span><span>C#</span><span>Android</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="160">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(245,158,11,0.15);">💣</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nayan-joshi07/TimerBomb" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-game">Game Dev</span>
+                <h3 class="project-title">Timer Bomb</h3>
+                <p class="project-desc">Time-pressured puzzle game where players defuse clocks by solving Hour, Minute, and Second Hand connection mechanics. Built with Unity featuring intuitive dot-connection gameplay.</p>
+                <div class="project-tech">
+                    <span>Unity</span><span>C#</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-header">
+                    <div class="project-icon" style="background:rgba(16,185,129,0.15);">📱</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nayan-joshi07" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <span class="project-badge badge-app">Web / App</span>
+                <h3 class="project-title">SDK Integration App</h3>
+                <p class="project-desc">Android application demonstrating full Firebase SDK integration — push notifications, crash analytics, Firebase Authentication, and user data persistence in Firebase Console.</p>
+                <div class="project-tech">
+                    <span>Android Studio</span><span>Java</span><span>Firebase</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONSULTING
+════════════════════════════════════════════ -->
+<section id="consulting">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Consulting</div>
+        <h2 class="section-title" data-aos="fade-up">How I Can Help You</h2>
+        <p class="section-desc" data-aos="fade-up">I work with startups and teams that need deep AI engineering expertise — from architecture to production deployment.</p>
+
+        <div class="consulting-grid">
+            <div class="service-card svc-ai" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-icon">🤖</div>
+                <h3 class="service-title">AI / LLM Architecture</h3>
+                <p class="service-desc">Design and build production-grade RAG pipelines, agentic workflows, and LLM integration systems tailored to your use case.</p>
+                <ul class="service-features">
+                    <li>RAG pipeline design &amp; implementation</li>
+                    <li>Agentic workflow architecture</li>
+                    <li>LLM selection &amp; fine-tuning strategy</li>
+                    <li>Vector DB setup (Qdrant, Neo4j)</li>
+                </ul>
+            </div>
+            <div class="service-card svc-prompt" data-aos="fade-up" data-aos-delay="70">
+                <div class="service-icon">✍️</div>
+                <h3 class="service-title">Prompt Engineering</h3>
+                <p class="service-desc">Optimize your LLM prompts for production — reliable, cost-efficient, and consistent outputs for any content type or workflow.</p>
+                <ul class="service-features">
+                    <li>System prompt design &amp; iteration</li>
+                    <li>Few-shot &amp; chain-of-thought strategies</li>
+                    <li>Structured output &amp; validation</li>
+                    <li>Observability with Langfuse / Logfire</li>
+                </ul>
+            </div>
+            <div class="service-card svc-security" data-aos="fade-up" data-aos-delay="140">
+                <div class="service-icon">🔒</div>
+                <h3 class="service-title">Security Audit (VAPT)</h3>
+                <p class="service-desc">Full-stack vulnerability assessment covering backend, frontend, infrastructure, cloud, and dependencies — with full remediation support.</p>
+                <ul class="service-features">
+                    <li>Backend &amp; API security review</li>
+                    <li>Infrastructure &amp; cloud audit (AWS)</li>
+                    <li>Dependency vulnerability scanning</li>
+                    <li>HTTPS/TLS enforcement &amp; hardening</li>
+                </ul>
+            </div>
+            <div class="service-card svc-monitoring" data-aos="fade-up" data-aos-delay="210">
+                <div class="service-icon">📊</div>
+                <h3 class="service-title">Production Monitoring</h3>
+                <p class="service-desc">Deploy and configure a full observability stack so your team can see exactly what's happening in production — in real time.</p>
+                <ul class="service-features">
+                    <li>Grafana + Prometheus + Loki setup</li>
+                    <li>EC2 / container metrics (cAdvisor)</li>
+                    <li>Alerting &amp; dashboard design</li>
+                    <li>Cross-host service discovery</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="consulting-cta" data-aos="fade-up">
+            <h3>Ready to build something intelligent?</h3>
+            <p>Whether you need a full AI system built or just a second opinion on your architecture — let's talk.</p>
+            <div class="cta-buttons">
+                <a href="mailto:nayan07joshi@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-comment"></i> Send a Message
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CERTIFICATIONS
+════════════════════════════════════════════ -->
+<section id="certifications">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Certifications</div>
+        <h2 class="section-title" data-aos="fade-up">Credentials</h2>
+
+        <div class="certs-grid">
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+                <img src="./img/cert-anthropic-mcp.png" alt="Introduction to Model Context Protocol" class="cert-image">
+                <div class="cert-body">
+                    <div class="cert-title">Introduction to Model Context Protocol</div>
+                    <div class="cert-issuer">Anthropic · Apr 2026</div>
+                </div>
+            </div>
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
+                <img src="./img/cert-anthropic-agent-skills.png" alt="Introduction to Agent Skills" class="cert-image">
+                <div class="cert-body">
+                    <div class="cert-title">Introduction to Agent Skills</div>
+                    <div class="cert-issuer">Anthropic</div>
+                </div>
+            </div>
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="160">
+                <img src="./img/cert-anthropic-claude-code.png" alt="Claude Code in Action" class="cert-image">
+                <div class="cert-body">
+                    <div class="cert-title">Claude Code in Action</div>
+                    <div class="cert-issuer">Anthropic</div>
+                </div>
+            </div>
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="240">
+                <img src="./img/UnityCertified.png" alt="Unity Certified Developer" class="cert-image">
+                <div class="cert-body">
+                    <div class="cert-title">Unity Certified Developer</div>
+                    <div class="cert-issuer">Unity Technologies</div>
+                </div>
+            </div>
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="320">
+                <img src="./img/nagarro-certificate-1.png" alt="Nagarro Certificate" class="cert-image">
+                <div class="cert-body">
+                    <div class="cert-title">Software Engineering Certificate</div>
+                    <div class="cert-issuer">Nagarro</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label" data-aos="fade-up">Contact</div>
+        <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <p class="section-desc" data-aos="fade-up">Open to full-time AI engineering roles, consulting engagements, and interesting collaborations.</p>
+
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Let's work together</h3>
+                <p>Whether you're hiring for an AI role, looking for a consultant to build your LLM system, or just want to talk about agentic AI — I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a href="mailto:nayan07joshi@gmail.com" class="contact-link">
+                        <div class="contact-link-icon" style="background:rgba(99,102,241,0.15);color:var(--primary);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">nayan07joshi@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/nayan-joshi-93271c201" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon" style="background:rgba(6,182,212,0.15);color:var(--accent);">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">nayan-joshi-93271c201</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Nayan-joshi07" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon" style="background:rgba(255,255,255,0.05);color:var(--text-secondary);">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">Nayan-joshi07</span>
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/u/Nayan_Joshi/" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon" style="background:rgba(245,158,11,0.15);color:#f59e0b;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">LeetCode</span>
+                            <span class="contact-link-value">Nayan_Joshi</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <!-- Sign up free at formspree.io and replace YOUR_FORM_ID below -->
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">What's this about?</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a topic...</option>
+                            <option value="job">Full-time Role / Opportunity</option>
+                            <option value="consulting">Consulting Engagement</option>
+                            <option value="ai">AI / LLM Architecture Help</option>
+                            <option value="security">Security Audit (VAPT)</option>
+                            <option value="other">Something Else</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about what you're building..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+    <p>© 2026 <span>Nayan Joshi</span>. Built with purpose, not just code.</p>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+// AOS
+AOS.init({ duration: 650, once: true, offset: 60 });
+
+// Typed.js
+new Typed('#typed-text', {
+    strings: ['AI Engineer', 'LLM Specialist', 'Agentic AI Builder', 'AI Consultant', 'RAG Architect'],
+    typeSpeed: 60,
+    backSpeed: 35,
+    backDelay: 1800,
+    loop: true
+});
+
+// Navbar scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile nav
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+// Project filters
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+        });
+    });
+});
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) current = s.id; });
+    navLinks.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${current}`;
+        link.style.color = isActive ? 'var(--primary)' : '';
+    });
+});
+
+// Particles.js
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 55, density: { enable: true, value_area: 900 } },
+        color: { value: '#6366f1' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.4, random: true },
+        size: { value: 2.5, random: true },
+        line_linked: { enable: true, distance: 160, color: '#6366f1', opacity: 0.12, width: 1 },
+        move: { enable: true, speed: 1.1, direction: 'none', random: false, straight: false, out_mode: 'out' }
+    },
+    interactivity: {
+        detect_on: 'canvas',
+        events: {
+            onhover: { enable: true, mode: 'grab' },
+            onclick: { enable: true, mode: 'push' },
+            resize: true
+        },
+        modes: {
+            grab: { distance: 140, line_linked: { opacity: 0.4 } },
+            push: { particles_nb: 3 }
+        }
+    },
+    retina_detect: true
+});
+</script>
+
+</body>
 </html>
